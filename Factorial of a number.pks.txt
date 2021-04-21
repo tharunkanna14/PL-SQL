@@ -1,0 +1,18 @@
+declare
+ num number := 6;             
+ fact number := 1;            
+ temp number;        
+   
+begin
+   
+temp :=num;
+while( temp>0 )             
+loop
+fact := fact*temp;
+temp := temp-1;
+  
+end loop;
+  
+dbms_output.put_line('factorial of '|| num || ' is ' || fact);
+  
+ end; 
